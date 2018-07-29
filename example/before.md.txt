@@ -1,7 +1,7 @@
 # Example awesome list
 
 ## Customizable headers!
-You can still keep any other parts of the document in tact, including images and links.
+You can still keep any other parts of the document intact, including images and links.
 
 !!toc
 
