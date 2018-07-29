@@ -1,4 +1,4 @@
-const autoAwesome = require("auto-awesome-list");
+const autoAwesome = require("./index.js");
 let argv1;
 if (require("path").basename(process.argv[0], ".exe") === "node") {
     argv1 = process.argv.slice(2);

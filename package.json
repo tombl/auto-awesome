@@ -23,5 +23,8 @@
     "@octokit/rest": "^15.9.4",
     "markdown-toc": "^1.2.0",
     "minimist": "^1.2.0"
+  },
+  "bin": {
+    "auto-awesome": "cli.js"
   }
 }

@@ -13,9 +13,12 @@ You may need to do a few minor tweaks at the end as this isn't perfect, such as 
 If you want to see an example of this, look at [before.md](https://github.com/tomblcode/auto-awesome/blob/master/example/before.md.txt), and [after.md](https://github.com/tomblcode/auto-awesome/blob/master/example/after.md).
 
 ## Usage
-### Api
-You can require `auto-awesome-list` on npm.
-It returns a function that takes 2 arguments, data, and a callback.
+This can take quite some time for a large file, as it has to look up each item on the list.
+### API
+Requiring `auto-awesome-list` after installing it with `npm install auto-awesome-list` returns a very simple function.
+#### Usage
+The first parameter of the function is a string containing the raw, input markdown. You can get this using fs, or other means.
+The second parameter is a callback, that takes one parameter, the processed markdown file.
 #### Example
 ```js
 const autoAwesome = require("auto-awesome-list");
@@ -23,4 +26,13 @@ const md = // string with plain markdown
 autoAwesome(md, data => {
     //...do whatever you want with the data
 });
+```
+### CLI
+Install with `npm install -g auto-awesome-list`
+#### Usage
+Reads input from stdin or the file in the passed parameter.
+Outputs to stdout or the file listed in the '-o' argument.
+#### Example
+```sh
+auto-awesome before.md -o after.md
 ```
