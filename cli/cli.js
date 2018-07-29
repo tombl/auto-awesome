@@ -1,9 +1,9 @@
 const autoAwesome = require("auto-awesome-list");
 let argv1;
-if (process.argv[0] === "node") {
-    process.argv.slice(2);
+if (require("path").basename(process.argv[0], ".exe") === "node") {
+    argv1 = process.argv.slice(2);
 } else {
-    process.argv.slice(1);
+    argv1 = process.argv.slice(1);
 }
 const argv = require('minimist')(argv1);
 
