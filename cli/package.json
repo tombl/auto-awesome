@@ -1,6 +1,6 @@
 {
   "name": "auto-awesome-list-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "cli.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tomblcode/auto-awesome/issues"
   },
-  "homepage": "https://github.com/tomblcode/auto-awesome#readme"
+  "homepage": "https://github.com/tomblcode/auto-awesome#readme",
+  "dependencies": {
+    "auto-awesome-list": "^1.0.0"
+  }
 }

@@ -7,6 +7,7 @@ See sindresorhus' [awesome manifesto](https://github.com/sindresorhus/awesome/bl
 ## What does auto-awesome do?
 This takes a bare bones markdown file and does the heavy lifting for turning it into an awesome list!
 It adds 2 new things to the markdown syntax, a `!!toc` tag to insert a table of contents, powered by [markdown-toc](https://github.com/jonschlinkert/markdown-toc), and a `!!!whatever` tag, which searches on github for that piece of software and adds a description and link for it. It may not be perfect at searching, so you can also specify a repository with `!!!user/repo`. 
+You may need to do a few minor tweaks at the end as this isn't perfect, such as the fact that in the example, `npm` is called `cli` as that is what the repo is called.
 
 ### Example
 If you want to see an example of this, look at [before.md](https://github.com/tomblcode/auto-awesome/blob/master/example/before.md.txt), and [after.md](https://github.com/tomblcode/auto-awesome/blob/master/example/after.md).
