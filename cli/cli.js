@@ -1,4 +1,4 @@
-const autoAwesome = require("auto-awesome");
+const autoAwesome = require("auto-awesome-list");
 let argv1;
 if (process.argv[0] === "node") {
     process.argv.slice(2);
