@@ -1,4 +1,6 @@
 # auto-awesome
+[![NPM](https://nodei.co/npm/auto-awesome-list.png?compact=true)](https://nodei.co/npm/auto-awesome-list/)
+
 An automatic awesome list generator
 
 ## What is an awesome list?
