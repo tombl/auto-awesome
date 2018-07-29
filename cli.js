@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const autoAwesome = require("./index.js");
 let argv1;
 if (require("path").basename(process.argv[0], ".exe") === "node") {
