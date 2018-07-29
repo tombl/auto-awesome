@@ -1,0 +1,27 @@
+{
+  "name": "auto-awesome",
+  "version": "1.0.0",
+  "description": "An automatic awesome list generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomblcode/auto-awesome.git"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "tomblcode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomblcode/auto-awesome/issues"
+  },
+  "homepage": "https://github.com/tomblcode/auto-awesome#readme",
+  "dependencies": {
+    "@octokit/rest": "^15.9.4",
+    "markdown-toc": "^1.2.0",
+    "minimist": "^1.2.0"
+  }
+}

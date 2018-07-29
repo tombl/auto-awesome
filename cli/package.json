@@ -1,0 +1,24 @@
+{
+  "name": "auto-awesome-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomblcode/auto-awesome.git"
+  },
+  "keywords": [
+    "awesome",
+    "cli",
+    "autmation"
+  ],
+  "author": "tomblcode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomblcode/auto-awesome/issues"
+  },
+  "homepage": "https://github.com/tomblcode/auto-awesome#readme"
+}
