@@ -3,6 +3,10 @@ const toc = require("markdown-toc");
 
 const punctuation = [".", "!", ",", "?"];
 function getEntry(name, callback) {
+    if (name === "NOT_FOUND") {
+        callback(" - ⚠️ Item not found. Try a direct link to the repo and check your spelling.");
+        return;
+    }
     octokit.repos.get({ // get the repo's data
         owner: name.split("/")[0],
         repo: name.split("/")[1]
@@ -29,7 +33,7 @@ function getRepo(name, callback) {
             page: 1
         }, (error, result) => {
             if (error) throw error;
-            callback(result.data.items[0].full_name);
+            callback(result.data.items[0] === undefined ? "NOT_FOUND" : result.data.items[0].full_name);
         });
     }
 }
