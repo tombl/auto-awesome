@@ -1,5 +1,11 @@
 const autoAwesome = require("auto-awesome");
-const argv = require('minimist')(process.argv.slice(2));
+let argv1;
+if (process.argv[0] === "node") {
+    process.argv.slice(2);
+} else {
+    process.argv.slice(1);
+}
+const argv = require('minimist')(argv1);
 
 if (argv.h || (argv._ == {} && process.stdin.isTTY)) {
     console.log("Creates an awesome list from a markdown file");
