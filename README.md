@@ -8,14 +8,23 @@ See sindresorhus' [awesome manifesto](https://github.com/sindresorhus/awesome/bl
 
 ## What does auto-awesome do?
 This takes a bare bones markdown file and does the heavy lifting for turning it into an awesome list!
-It adds 2 new things to the markdown syntax, a `!!toc` tag to insert a table of contents, powered by [markdown-toc](https://github.com/jonschlinkert/markdown-toc), and a `!!!whatever` tag, which searches on github for that piece of software and adds a description and link for it. It may not be perfect at searching, so you can also specify a repository with `!!!user/repo`. 
-You may need to do a few minor tweaks at the end as this isn't perfect, such as the fact that in the example, `npm` is called `cli` as that is what the repo is called.
+It adds 2 new things to the markdown syntax, table of contents tag, and a listing tag, which searches on GitHub for that piece of software and adds a description and link for it. 
 
 ### Example
-If you want to see an example of this, look at [before.md](https://github.com/tomblcode/auto-awesome/blob/master/example/before.md.txt), and [after.md](https://github.com/tomblcode/auto-awesome/blob/master/example/after.md).
+If you want to see an example of this, look at [before.md](https://github.com/tomblcode/auto-awesome/blob/master/example/before.md), and [after.md](https://github.com/tomblcode/auto-awesome/blob/master/example/after.md).
 
 ## Usage
 This can take quite some time for a large file, as it has to look up each item on the list.
+
+*If you are getting an API rate limit error, your file is too big and/or you are re-running this fast. To authenticate to get a higher rate limit, generate a github token (even with minumum permissions), and set the `github_token` env variable to the token.*
+
+### Syntax
+This extends markdown with 2 more tags.
+ - `!toc!` inserts a table of contents for all headings under it. *(you can only have one of these)*
+ - `!!repo` searches GitHub for `repo` and inserts a link and description of it.
+ - `!!user/repo` gets the link and description for the repo at `user/repo` on GitHub and inserts it.
+ - `!!repo~name` gets the repo *(in the format seen above)*, and sets the name to `name`. *(by default it takes the repository name from GitHub, which sometimes fails in examples such as `npm/cli`)*
+
 ### API
 Requiring `auto-awesome-list` after installing it with `npm install auto-awesome-list` returns a very simple function.
 #### Usage

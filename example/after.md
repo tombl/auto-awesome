@@ -10,9 +10,9 @@ You can still keep any other parts of the document intact, including images and 
 
 ## Example
  - [node](https://github.com/nodejs/node) - Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:.
- - [cli](https://github.com/npm/cli) - a package manager for JavaScript.
+ - [npm](https://github.com/npm/cli) - a package manager for JavaScript.
  - [awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources.
- - [auto-awesome](https://github.com/tomblcode/auto-awesome) - An automatic awesome list generator.
+ - [auto-awesome](https://github.com/tomblcode/auto-awesome) - Taking the hard work out of making an awesome list.
  - [electron](https://github.com/electron/electron) - Build cross-platform desktop apps with JavaScript, HTML, and CSS.
  - [awesome-electron](https://github.com/sindresorhus/awesome-electron) - Useful resources for creating apps with Electron.
 
