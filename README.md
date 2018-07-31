@@ -7,8 +7,8 @@ An automatic awesome list generator
 See sindresorhus' [awesome manifesto](https://github.com/sindresorhus/awesome/blob/master/awesome.md) for what an awesome list is. They are basically curated lists of resources for developers.
 
 ## What does auto-awesome do?
-This takes a bare bones markdown file and does the heavy lifting for turning it into an awesome list!
-It adds 2 new things to the markdown syntax, table of contents tag, and a listing tag, which searches on GitHub for that piece of software and adds a description and link for it. 
+Auto-awesome takes a barebones markdown file and does the heavy lifting for turning it into an awesome list!
+It adds 2 new things to the markdown syntax, a table of contents tag, and a listing tag, which searches on GitHub for that piece of software and adds a description and link for it. 
 
 ### Example
 If you want to see an example of this, look at [before.md](https://github.com/tomblcode/auto-awesome/blob/master/example/before.md), and [after.md](https://github.com/tomblcode/auto-awesome/blob/master/example/after.md).
@@ -16,7 +16,7 @@ If you want to see an example of this, look at [before.md](https://github.com/to
 ## Usage
 This can take quite some time for a large file, as it has to look up each item on the list.
 
-*If you are getting an API rate limit error, your file is too big and/or you are re-running this fast. To authenticate to get a higher rate limit, generate a github token (even with minumum permissions), and set the `github_token` env variable to the token.*
+*If you are getting an **API rate limit** error, your file is too big and/or you are re-running this fast. To authenticate to get a higher rate limit, [generate a github token](https://github.com/settings/tokens/new) (with minumum permissions), and set the `github_token` env variable to the token.*
 
 ### Syntax
 This extends markdown with 2 more tags.
@@ -33,9 +33,9 @@ The second parameter is a callback, that takes one parameter, the processed mark
 #### Example
 ```js
 const autoAwesome = require("auto-awesome-list");
-const md = // string with plain markdown
+const md = "!!nodejs"
 autoAwesome(md, data => {
-    //...do whatever you want with the data
+    console.log(data); // logs: [node](https://github.com/nodejs/node) - Node.js JavaScript runtime...
 });
 ```
 ### CLI
